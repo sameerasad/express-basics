@@ -3,6 +3,7 @@
  const Joi =require("joi");
  const app = express();
  var bodyParser = require('body-parser')
+ const logger = require('./logger')
   
  // create application/json parser
  var jsonParser = bodyParser.json()
@@ -10,7 +11,10 @@
  app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
+// middleware
 app.use(bodyParser.json())
+// customMiddleWare
+app.use(logger)
 
  const courses =[{id:1,name:"English"},{id:2,name:"Urdu"},{id:3,name:"Chemistry"}]
  

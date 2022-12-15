@@ -1,35 +1,7 @@
-const logger = name => console.log(name);
-module.export = logger();
+function log(req,res,next){
+    console.log("hello... world")
+    next()
+ 
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+module.exports= log;
