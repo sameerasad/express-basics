@@ -1,0 +1,35 @@
+const logger = name => console.log(name);
+module.export = logger();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
